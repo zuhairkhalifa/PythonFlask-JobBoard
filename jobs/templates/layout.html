@@ -1,4 +1,4 @@
-!-- templates/layout.html -->
+
 <!doctype html>
 
 
@@ -6,12 +6,17 @@
 
 <html>
   <head>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='bulma.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='app.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     
     <title>Job Board</title>
 
     
   </head>
   <body>
+    
     <div class="container top">
       <div class="content">
         {% block content %}
@@ -22,9 +27,10 @@
       </div>
     </div>
   </body>
+
+
 </html>
-<link rel="stylesheet" href="{{ url_for('static',filename='bulma.min.css')}}"/>
-<link rel="stylesheet" href="{{ url_for('static',filename='app.css')}}"/>
+
 
 
 
